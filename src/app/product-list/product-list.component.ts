@@ -9,9 +9,9 @@ import { Product } from '../product';
 })
 export class ProductListComponent {
   products: Array<Product> = [
-    { id: 1, title: 'product 1' },
-    { id: 2, title: 'product 2' },
-    { id: 3, title: 'product 3' },
-    { id: 4, title: 'product 4' },
+    { id: 1, title: 'Keyboard' },
+    { id: 2, title: 'Microphone' },
+    { id: 3, title: 'Web camera' },
+    { id: 4, title: 'Tablet' },
   ];
 }

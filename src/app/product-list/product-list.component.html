@@ -19,3 +19,15 @@ $index: Indicates the index of the item in the array
 $first/$last: Indicates whether the current item is the first or last one in the array
 $even/$odd: Indicates whether the index of the item in the array is even or odd 
 -->
+
+<ul class="pill-group">
+  @for (product of products; track product.id) {
+  <li class="pill">
+    @switch (product.title) { @case ('Keyboard') { keyb } @case ('Microphone') {
+    mic } @default { def } }
+    {{ product.title }}
+  </li>
+  } @empty {
+  <p>No products found!</p>
+  }
+</ul>
